@@ -1,0 +1,287 @@
+{
+  "@context": [
+    {
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "schema": "https://schema.org",
+      "trov": "https://w3id.org/trace/2023/05/trov#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "tro",
+      "@type": [
+        "trov:TransparentResearchObject",
+        "schema:CreativeWork"
+      ],
+      "schema:creator": "Fred User",
+      "schema:dateCreated": "2024-04-02T06:12:32.290765",
+      "schema:description": "Analysis and visualization of S&P500 data using FRED API. S&P 500 data is copyrighted and redistribution is not permitted without permission. The analysis requires use of a private FRED API key that cannot be redistributed.",
+      "schema:name": "FRED API Example",
+      "trov:hasArrangement": [
+        {
+          "@id": "arrangement/0",
+          "@type": "trov:Artifact Arrangement",
+          "rdfs:comment": "Before executing workflow",
+          "trov:hasLocus": [
+            {
+              "@id": "arrangement/0/locus/0",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/0"
+              },
+              "trov:hasLocation": "fred_apikey.txt"
+            },
+            {
+              "@id": "arrangement/0/locus/1",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/1"
+              },
+              "trov:hasLocation": "requirements.txt"
+            },
+            {
+              "@id": "arrangement/0/locus/2",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/2"
+              },
+              "trov:hasLocation": "run.sh"
+            },
+            {
+              "@id": "arrangement/0/locus/3",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/3"
+              },
+              "trov:hasLocation": "scripts/fred.py"
+            }
+          ]
+        },
+        {
+          "@id": "arrangement/1",
+          "@type": "trov:Artifact Arrangement",
+          "rdfs:comment": "After executing workflow",
+          "trov:hasLocus": [
+            {
+              "@id": "arrangement/1/locus/0",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/0"
+              },
+              "trov:hasLocation": "fred_apikey.txt"
+            },
+            {
+              "@id": "arrangement/1/locus/1",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/1"
+              },
+              "trov:hasLocation": "requirements.txt"
+            },
+            {
+              "@id": "arrangement/1/locus/2",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/2"
+              },
+              "trov:hasLocation": "run.sh"
+            },
+            {
+              "@id": "arrangement/1/locus/3",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/4"
+              },
+              "trov:hasLocation": "results/sp500.png"
+            },
+            {
+              "@id": "arrangement/1/locus/4",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/3"
+              },
+              "trov:hasLocation": "scripts/fred.py"
+            },
+            {
+              "@id": "arrangement/1/locus/5",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/5"
+              },
+              "trov:hasLocation": "data/sp500.json"
+            },
+            {
+              "@id": "arrangement/1/locus/6",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/6"
+              },
+              "trov:hasLocation": "data/sp500.csv"
+            }
+          ]
+        },
+        {
+          "@id": "arrangement/2",
+          "@type": "trov:Artifact Arrangement",
+          "rdfs:comment": "After removing restricted files",
+          "trov:hasLocus": [
+            {
+              "@id": "arrangement/2/locus/0",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/1"
+              },
+              "trov:hasLocation": "requirements.txt"
+            },
+            {
+              "@id": "arrangement/2/locus/1",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/2"
+              },
+              "trov:hasLocation": "run.sh"
+            },
+            {
+              "@id": "arrangement/2/locus/2",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/4"
+              },
+              "trov:hasLocation": "results/sp500.png"
+            },
+            {
+              "@id": "arrangement/2/locus/3",
+              "@type": "trov:ArtifactLocus",
+              "trov:hasArtifact": {
+                "@id": "composition/1/artifact/3"
+              },
+              "trov:hasLocation": "scripts/fred.py"
+            }
+          ]
+        }
+      ],
+      "trov:hasAttribute": [],
+      "trov:hasComposition": {
+        "@id": "composition/1",
+        "@type": "trov:ArtifactComposition",
+        "trov:hasArtifact": [
+          {
+            "@id": "composition/1/artifact/0",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/plain",
+            "trov:sha256": "067430f7c54898a6e8f9d094d53d36bf58228b2c13c56ceddd4c0a565ce07c0e"
+          },
+          {
+            "@id": "composition/1/artifact/1",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/plain",
+            "trov:sha256": "79056c6a6c4bf5c13958768148cbc1a0db8e91717a7834c494c9c0e2d7b33030"
+          },
+          {
+            "@id": "composition/1/artifact/2",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/x-shellscript",
+            "trov:sha256": "c38107430682ca6466f61421f40aa13bf5cab30f772df6cc19176d84ba8f1a8e"
+          },
+          {
+            "@id": "composition/1/artifact/3",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/plain",
+            "trov:sha256": "25f9160f2bd6fb2049775e75f710d8a74f9cbda7123a007c9c95e2b1f0445f89"
+          },
+          {
+            "@id": "composition/1/artifact/4",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "image/png",
+            "trov:sha256": "30a7f0712996ede7e0a3b7da59473b75fe876c83a8e88bd549636baf5c68cbef"
+          },
+          {
+            "@id": "composition/1/artifact/5",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "application/json",
+            "trov:sha256": "773bfbc5ece017777aac769cedacaa733a6f121b50a86aea28d83259da4e9693"
+          },
+          {
+            "@id": "composition/1/artifact/6",
+            "@type": "trov:ResearchArtifact",
+            "trov:mimeType": "text/csv",
+            "trov:sha256": "6e69b0bb10277374181f0db85645b79e0fd3c62566ecfc96211fe40c32ad2d57"
+          }
+        ],
+        "trov:hasFingerprint": {
+          "@id": "fingerprint",
+          "@type": "trov:CompositionFingerprint",
+          "trov:sha256": "5f7879ea3bd4a3cd838d1180568dcbde20837d19f965bb3c0be56a0b0f5a41c6"
+        }
+      },
+      "trov:hasPerformance": [
+        {
+          "@id": "trp/0",
+          "@type": "trov:TrustedResearchPerformance",
+          "rdfs:comment": "Executed workflow",
+          "trov:accessedArrangement": {
+            "@id": "arrangement/0"
+          },
+          "trov:contributedToArrangement": {
+            "@id": "arrangement/1"
+          },
+          "trov:endedAtTime": "2024-04-02T06:12:34",
+          "trov:hasPerformanceAttribute": [],
+          "trov:startedAtTime": "2024-04-02T06:12:32",
+          "trov:wasCoductedBy": {
+            "@id": "trs"
+          }
+        },
+        {
+          "@id": "trp/1",
+          "@type": "trov:TrustedResearchPerformance",
+          "rdfs:comment": "Removal of restricted files",
+          "trov:accessedArrangement": {
+            "@id": "arrangement/1"
+          },
+          "trov:contributedToArrangement": {
+            "@id": "arrangement/2"
+          },
+          "trov:endedAtTime": "2024-04-02T06:12:35",
+          "trov:hasPerformanceAttribute": [],
+          "trov:startedAtTime": "2024-04-02T06:12:35",
+          "trov:wasCoductedBy": {
+            "@id": "trs"
+          }
+        }
+      ],
+      "trov:wasAssembledBy": {
+        "@id": "trs",
+        "@type": [
+          "trov:TrustedResearchSystem",
+          "schema:Organization"
+        ],
+        "rdfs:comment": "TRS that can prevent author intervention.",
+        "schema:email": "trace@trace-poc.xyz",
+        "schema:name": "TRACE Reference Implementation",
+        "schema:publisher": "TRACE Project",
+        "schema:url": "https://server.trace-poc.xyz",
+        "trov:hasCapability": [
+          {
+            "@id": "trs/capability/1",
+            "@type": "trov:CanPreventAuthorIntervention"
+          },
+          {
+            "@id": "trs/capability/2",
+            "@type": "trov:CanPreventNetworkAccess"
+          },
+          {
+            "@id": "trs/capability/3",
+            "@type": "trov:CanExcludeInputs"
+          },
+          {
+            "@id": "trs/capability/4",
+            "@type": "trov:CanExcludeOutputs"
+          }
+        ],
+        "trov:publicKey": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\n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\n=WIXI\n-----END PGP PUBLIC KEY BLOCK-----\n"
+      }
+    }
+  ]
+}

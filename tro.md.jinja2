@@ -55,12 +55,7 @@ Arrangements define how artifacts, typically files, are organized before and aft
 | Artifact | SHA-256  | Status |
 | -------- | -------- | ------ | 
 {%- for location in tro["arrangements"][arrangement]["artifacts"] %}
-    {%- if tro["arrangements"][arrangement]["artifacts"][location]["excluded"] != "None" %}
-| ~~{{ location }}~~ | {{ tro["arrangements"][arrangement]["artifacts"][location]["sha256"] | truncate(32) }} | Excluded due to {{ tro["arrangements"][arrangement]["artifacts"][location]["excluded"] }} |        
-    {%- else %}
 | {{ location }} | {{ tro["arrangements"][arrangement]["artifacts"][location]["sha256"] | truncate(32) }} | {{ tro["arrangements"][arrangement]["artifacts"][location]["status"] }} |        
-
-    {%- endif %}
 {%- endfor %}
 {%- endfor %}
 

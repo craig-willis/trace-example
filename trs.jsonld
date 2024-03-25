@@ -1,14 +1,22 @@
 {
-    "rdfs:comment": "TRS that can monitor network accesses or provide Internet isolation",
+    "rdfs:comment": "TRS that can prevent author intervention.",
     "trov:hasCapability": [
       {
         "@id": "trs/capability/1",
-        "@type": "trov:CanRecordInternetAccess"
+        "@type": "trov:CanPreventAuthorIntervention"
       },
       {
         "@id": "trs/capability/2",
-        "@type": "trov:CanProvideInternetIsolation"
-      }
+        "@type": "trov:CanPreventNetworkAccess"
+      },
+      {
+        "@id": "trs/capability/3",
+        "@type": "trov:CanExcludeInputs"
+      },
+      {
+        "@id": "trs/capability/4",
+        "@type": "trov:CanExcludeOutputs"
+      }                 
     ],
     "schema:publisher": "TRACE Project",
     "schema:email": "trace@trace-poc.xyz",
