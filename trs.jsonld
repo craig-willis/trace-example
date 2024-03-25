@@ -1,0 +1,17 @@
+{
+    "rdfs:comment": "TRS that can monitor network accesses or provide Internet isolation",
+    "trov:hasCapability": [
+      {
+        "@id": "trs/capability/1",
+        "@type": "trov:CanRecordInternetAccess"
+      },
+      {
+        "@id": "trs/capability/2",
+        "@type": "trov:CanProvideInternetIsolation"
+      }
+    ],
+    "schema:publisher": "TRACE Project",
+    "schema:email": "trace@trace-poc.xyz",
+    "schema:url": "https://server.trace-poc.xyz",
+    "schema:name": "TRACE Reference Implementation"
+}
