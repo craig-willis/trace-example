@@ -1,5 +1,8 @@
 # TRACE System (TRS) Example
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11367237.svg)](https://doi.org/10.5281/zenodo.11367237)
+
+
 This repository contains a simple example of a TRACE System (TRS) that implements a manual workflow that includes the following steps:
 
 * Authors submit information necessary to run their computational workflow.
@@ -17,7 +20,6 @@ Documented in [`trs.jsonld`](trs.jsonld):
 | Prevents network access | TRS may disable network access during execution.  |
 | Excludes inputs         | TRS may exclude non-redistributable inputs from the resulting TRO. Excluded inputs are not retained by the TRS.|
 | Excludes outputs        | TRS may exclude non-redistributable outputs from the resulting TRO. Excluded outputs are not retained by the TRS.|
-| 
 
 
 ## Scenario: Plotting the S&P500 
